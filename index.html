@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="all">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernanda & João — Ensaio Gestante | Direção Editorial & Moodboard</title>
+  <meta name="description" content="Moodboard editorial e direção fotográfica para o ensaio gestante de Fernanda & João (@oroledocasal). Atmosferas de Praia Dourada e Studio Noir. Direção técnica com lente 50mm, rebatedor e luz modulada.">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="loading-active">
+
+  <!-- Custom Luxury Cursor -->
+  <div class="custom-cursor" id="customCursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <span class="cursor-label" id="cursorLabel">EXPLORAR</span>
+  </div>
+
+  <!-- Editorial Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-monogram">F &amp; J</div>
+      <div class="preloader-title">MATERNITÉ • DIREÇÃO EDITORIAL</div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar" id="preloaderBar"></div>
+      </div>
+      <div class="preloader-count" id="preloaderCount">00%</div>
+      <div class="preloader-coords">23°00'S 43°24'W • PRAIA &amp; STUDIO • 50MM</div>
+    </div>
+  </div>
+
+  <!-- Background Grain Texture & Ambient Glow -->
+  <div class="bg-noise"></div>
+  <div class="ambient-glow" id="ambientGlow"></div>
+
+  <!-- Sticky Luxury Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-monogram">F&amp;J</span>
+        <span class="brand-divider">/</span>
+        <span class="brand-text">ENSAIO GESTANTE</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#conceito" class="nav-link"><span class="nav-num">01</span> Conceito</a>
+        <a href="#praia" class="nav-link"><span class="nav-num">02</span> Praia</a>
+        <a href="#comparador" class="nav-link"><span class="nav-num">03</span> O Regulador</a>
+        <a href="#studio" class="nav-link"><span class="nav-num">04</span> Studio</a>
+        <a href="#direcao-50mm" class="nav-link"><span class="nav-num">05</span> Direção 50mm</a>
+        <a href="#galeria" class="nav-link"><span class="nav-num">06</span> Galeria</a>
+        <a href="#cronograma" class="nav-link"><span class="nav-num">07</span> Checklist</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Sound Synthesizer Button -->
+        <button class="sound-toggle-btn" id="soundToggleBtn" aria-label="Ativar trilha sonora ambiente" title="Trilha ambiente sintética (Brisa do mar &amp; Vinil)">
+          <div class="sound-icon-bars">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+            <span class="bar bar-4"></span>
+          </div>
+          <span class="sound-label" id="soundLabel">SOM : OFF</span>
+        </button>
+
+        <!-- Instagram Badge -->
+        <a href="https://www.instagram.com/oroledocasal/" target="_blank" rel="noopener noreferrer" class="social-pill" title="Visitar perfil do casal @oroledocasal">
+          <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span class="pill-text">@oroledocasal</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-links">
+      <a href="#conceito" class="drawer-link">01. Conceito do Ensaio</a>
+      <a href="#praia" class="drawer-link">02. Atmosfera: Praia Dourada</a>
+      <a href="#comparador" class="drawer-link">03. O Regulador: Praia vs Studio</a>
+      <a href="#studio" class="drawer-link">04. Atmosfera: Studio Noir</a>
+      <a href="#direcao-50mm" class="drawer-link">05. Guia Técnico 50mm &amp; Luz</a>
+      <a href="#galeria" class="drawer-link">06. Galeria &amp; Moodboard</a>
+      <a href="#cronograma" class="drawer-link">07. Cronograma &amp; Checklist</a>
+      <a href="https://www.instagram.com/oroledocasal/" target="_blank" class="drawer-link highlight">Instagram: @oroledocasal</a>
+    </div>
+  </div>
+
+  <!-- Floating Atmosphere Filter Bar (Clean, without glowing lights) -->
+  <div class="floating-mood-bar" id="floatingMoodBar">
+    <div class="mood-bar-container">
+      <span class="mood-bar-label">ATMOSFERA:</span>
+      <button class="mood-pill active" data-mood="all">
+        <span>VISÃO COMPLETA</span>
+      </button>
+      <button class="mood-pill" data-mood="praia">
+        <span>01. PRAIA DOURADA</span>
+      </button>
+      <button class="mood-pill" data-mood="studio">
+        <span>02. STUDIO NOIR</span>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-background-art">
+        <div class="glow-orb orb-gold"></div>
+        <div class="glow-orb orb-noir"></div>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Editorial Metadata Bar (Clean, without glowing lights) -->
+        <div class="hero-eyebrow-row">
+          <div class="hero-badge">
+            DIREÇÃO FOTOGRÁFICA EDITORIAL
+          </div>
+          <div class="hero-meta-item">
+            <span class="meta-label">ÓTICA</span>
+            <span class="meta-val">50MM PRIME • f/1.8</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="meta-label">ROTA DE PRODUÇÃO</span>
+            <span class="meta-val">PINDAMONHANGABA ➔ LITORAL</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="meta-label">LOCAÇÕES</span>
+            <span class="meta-val">PRAIA (AMANHECER) &amp; STUDIO</span>
+          </div>
+          <div class="hero-meta-item live-sun-tracker">
+            <span class="meta-label">SOL NASCENTE (AMANHECER)</span>
+            <span class="meta-val" id="goldenHourClock">05:45 — 08:30 BRT</span>
+          </div>
+        </div>
+
+        <!-- Main Display Typography -->
+        <div class="hero-title-block">
+          <div class="hero-title-line">
+            <span class="title-word serif">Fernanda</span>
+            <span class="title-amp">&amp;</span>
+            <span class="title-word serif">João</span>
+          </div>
+          <div class="hero-subtitle-line">
+            <span class="sub-lead">O ENSAIO GESTANTE</span>
+            <span class="sub-sep">•</span>
+            <span class="sub-italic">A Dança Entre a Maré, o Sol Nascente e a Intimidade</span>
+          </div>
+        </div>
+
+        <!-- Hero Editorial Showcase Dual-Card Stack (Praia & Studio) -->
+        <div class="hero-triptych hero-dual" id="heroTriptych">
+          <!-- Card 1: Praia -->
+          <article class="hero-card card-praia" data-tilt>
+            <div class="card-inner">
+              <div class="card-media">
+                <img src="assets/praia_casal_gestante_1790699193950.jpg" 
+                     onerror="this.onerror=null; this.src='Praia/Beach Maternity Photos.jpeg';" 
+                     alt="Fernanda & João na Praia ao Pôr do Sol" 
+                     class="card-img">
+                <div class="card-gradient"></div>
+              </div>
+              <div class="card-caption">
+                <div class="card-tag">ATMOSFERA 01</div>
+                <h3 class="card-title">Praia Dourada</h3>
+                <p class="card-desc">Luz da aurora nascendo sobre o mar, linho cru, brisa fresca da manhã e a ternura da nova vida.</p>
+                <div class="card-specs">50mm • f/1.8 • Rebatedor Prata (Nascer do Sol)</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Studio -->
+          <article class="hero-card card-studio" data-tilt>
+            <div class="card-inner">
+              <div class="card-media">
+                <img src="assets/studio_casal_gestante_1790699214446.jpg" 
+                     onerror="this.onerror=null; this.src='Studio/download (10).jpeg';" 
+                     alt="Fernanda & João no Studio Minimalista" 
+                     class="card-img">
+                <div class="card-gradient"></div>
+              </div>
+              <div class="card-caption">
+                <div class="card-tag">ATMOSFERA 02</div>
+                <h3 class="card-title">Studio Noir</h3>
+                <p class="card-desc">Chiaroscuro refinado, Octabox com grade colmeia, preto atemporal e escultura da gestação.</p>
+                <div class="card-specs">50mm • f/2.5 • Octabox 90cm + Grid</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll-prompt">
+          <a href="#conceito" class="scroll-link">
+            <span class="scroll-mouse">
+              <span class="scroll-wheel"></span>
+            </span>
+            <span class="scroll-text">ROLAR PARA O CONCEITO</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 01: O CONCEITO & O CASAL -->
+    <section class="content-section section-conceito" id="conceito" data-mood-section="all">
+      <div class="container">
+        <div class="section-header-editorial">
+          <span class="section-eyebrow">01 / PROTAGONISTAS &amp; MANIFESTO</span>
+          <h2 class="section-headline">Do feed de viagens à intimidade sagrada da nova vida</h2>
+          <div class="headline-divider"></div>
+        </div>
+
+        <div class="couple-profile-layout">
+          <!-- Couple Bio & Editorial Context -->
+          <div class="manifesto-card">
+            <div class="instagram-handle-badge">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"></circle>
+              </svg>
+              <span>@oroledocasal</span>
+            </div>
+            <h3 class="manifesto-title">Fernanda &amp; João: Uma celebração da cumplicidade</h3>
+            <p class="manifesto-text">
+              Conhecidos pela leveza e autenticidade ao compartilhar suas jornadas e viagens, Fernanda e João entram agora no capítulo mais potente de suas histórias: a espera da maternidade. Este ensaio não é apenas um registro de barriga; é um ensaio de <em>amor a dois se expandindo em três</em>.
+            </p>
+            <p class="manifesto-text">
+              A jornada começa na madrugada, partindo de <strong>Pindamonhangaba às 04h00</strong> rumo ao litoral para vivenciar o espetáculo do <strong>sol nascendo sobre o mar</strong>. Na praia, aproveitamos a temperatura amena e a luz pura da aurora até as 08h30. Em seguida, retornamos para Pinda para um almoço reconfortante ao meio-dia e, a partir das 13h00, realizamos a segunda etapa no <strong>Studio Noir</strong>, finalizando pontualmente às 16h00 com conforto total para a gestante.
+            </p>
+
+            <div class="manifesto-quote-box">
+              <blockquote>
+                "A câmera de 50mm opera aqui como uma testemunha silenciosa: próxima o suficiente para sentir a respiração, respeitosa o bastante para eternizar o afeto em sua forma mais pura."
+              </blockquote>
+            </div>
+
+            <div class="editorial-highlights-row">
+              <div class="highlight-item">
+                <span class="hl-number">50mm</span>
+                <span class="hl-label">Perspectiva natural sem distorção angular</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-number">02</span>
+                <span class="hl-label">Locações com linguagens contrastantes</span>
+              </div>
+              <div class="highlight-item">
+                <span class="hl-number">100%</span>
+                <span class="hl-label">Foco na conexão humana e no acolhimento</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Editorial Showcase Card: Artistic Conception Detail -->
+          <div class="concept-showcase-card" data-tilt>
+            <div class="concept-media">
+              <img src="assets/detalhe_barriga_luz_1790699270320.jpg" 
+                   onerror="this.onerror=null; this.src='Praia/Beach Maternity Photos.jpeg';" 
+                   alt="Detalhe de luz e acolhimento no ventre" 
+                   class="concept-img" loading="lazy">
+              <div class="concept-badge">DIREÇÃO DE INTIMIDADE</div>
+            </div>
+            <div class="concept-info">
+              <h4>A Escultura da Espera</h4>
+              <p>O ventre iluminado por feixes rasantes em 50mm f/1.8. O foco se concentra na respiração, na mão protetora e na reverência à nova vida.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: ATMOSFERA 01 - PRAIA DOURADA -->
+    <section class="content-section section-praia" id="praia" data-mood-section="praia">
+      <div class="mood-watermark">PRAIA</div>
+      <div class="container">
+        <div class="section-header-editorial">
+          <span class="section-eyebrow">ATMOSFERA 01 • NATUREZA &amp; LIBERDADE</span>
+          <h2 class="section-headline">Praia Dourada: O Sol Nascente, a Brisa e a Maré</h2>
+          <p class="section-subheadline">
+            Na praia, o ensaio se inicia no despertar do dia. A saída às 04h00 de Pindamonhangaba nos posiciona exatamente na areia para o nascer do sol no oceano, aproveitando a praia calma, sem banhistas e com temperatura fresca para a gestante das 05h45 às 08h30.
+          </p>
+          <div class="headline-divider"></div>
+        </div>
+
+        <!-- Editorial Split Feature -->
+        <div class="editorial-feature-grid">
+          <div class="feature-media-col" data-tilt>
+            <div class="media-frame">
+              <img src="assets/praia_casal_gestante_1790699193950.jpg" 
+                   onerror="this.onerror=null; this.src='Praia/Beach Maternity Photos.jpeg';" 
+                   alt="Fernanda & João na beira da água ao pôr do sol" 
+                   class="feature-img" loading="lazy">
+              <div class="media-badge-editorial">DIREÇÃO EDITORIAL PRAIA</div>
+            </div>
+          </div>
+
+          <div class="feature-info-col">
+            <div class="mood-specs-box">
+              <h3 class="specs-box-title">Pilares Estéticos da Praia</h3>
+              <div class="specs-grid">
+                <div class="spec-card">
+                  <span class="spec-card-num">01</span>
+                  <h4>Nascer do Sol &amp; Aurora Dourada</h4>
+                  <p>Janela mágica das 05h45 às 08h30. O sol nascendo sobre o horizonte do mar recorta o casal com halos de luz cristalina e dourada nos cabelos.</p>
+                </div>
+                <div class="spec-card">
+                  <span class="spec-card-num">02</span>
+                  <h4>Rebatedor Prata a 45°</h4>
+                  <p>Preenchimento sutil posicionado na altura do ventre, garantindo brilho nos olhos sem criar sombras duras no queixo.</p>
+                </div>
+                <div class="spec-card">
+                  <span class="spec-card-num">03</span>
+                  <h4>Movimento &amp; Tecidos</h4>
+                  <p>Linho cru, rendas translúcidas e tecidos leves que reagem ao vento marinho, emoldurando as curvas da gestação.</p>
+                </div>
+                <div class="spec-card">
+                  <span class="spec-card-num">04</span>
+                  <h4>Conexão Descalça</h4>
+                  <p>Pés na areia, água salgada envolvendo os tornozelos, caminhadas fluidas e risos sem poses engessadas.</p>
+                </div>
+              </div>
+
+              <!-- Praia Color Palette Swatches (Realevate Architectural Look) -->
+              <div class="color-palette-block">
+                <span class="palette-title">PALETA CROMÁTICA DA PRAIA</span>
+                <div class="palette-swatches">
+                  <div class="swatch-item">
+                    <div class="swatch-color" style="background: #C99464;"></div>
+                    <span class="swatch-hex">#C99464</span>
+                    <span class="swatch-name">Dourado Solar</span>
+                  </div>
+                  <div class="swatch-item">
+                    <div class="swatch-color" style="background: #E8DCC4;"></div>
+                    <span class="swatch-hex">#E8DCC4</span>
+                    <span class="swatch-name">Areia Quente</span>
+                  </div>
+                  <div class="swatch-item">
+                    <div class="swatch-color" style="background: #F4EFE6;"></div>
+                    <span class="swatch-hex">#F4EFE6</span>
+                    <span class="swatch-name">Linho Cru</span>
+                  </div>
+                  <div class="swatch-item">
+                    <div class="swatch-color" style="background: #5B7C8D;"></div>
+                    <span class="swatch-hex">#5B7C8D</span>
+                    <span class="swatch-name">Maré Atlântica</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horizontal Scroll Reference Reel (Praia) -->
+        <div class="editorial-reel-section">
+          <div class="reel-header">
+            <div class="reel-title-block">
+              <span class="reel-eyebrow">02 // MOOD &amp; INSPIRAÇÕES PRAIA</span>
+              <h3 class="reel-title">Galeria de Poses &amp; Luz Costeira</h3>
+            </div>
+            <div class="reel-nav-controls">
+              <span class="reel-nav-hint">ARRASTE OU NAVEGUE</span>
+              <div class="reel-btn-group">
+                <button class="reel-arrow-btn prev" data-reel="reelPraia" aria-label="Voltar referências praia">‹</button>
+                <button class="reel-arrow-btn next" data-reel="reelPraia" aria-label="Avançar referências praia">›</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="horizontal-reel-container" id="reelPraia">
+            <div class="horizontal-reel-track">
+              <div class="reel-item" data-lightbox="Praia/Beach Maternity Photos.jpeg" data-caption="Abraço frontal com vento marinho e luz dourada envolvente">
+                <img src="Praia/Beach Maternity Photos.jpeg" alt="Referência Praia 1" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 01</span>
+                  <h4>O Abraço no Crepúsculo</h4>
+                  <p>Cúmplices na linha da maré, com foco na troca de olhares e na mão protetora de João sobre o ventre.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Praia/Ensaio Gestante.jpeg" data-caption="Sol beijando a barriga em close lateral">
+                <img src="Praia/Ensaio Gestante.jpeg" alt="Referência Praia 2" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 02</span>
+                  <h4>O Beijo Solar no Ventre</h4>
+                  <p>Raio de sol atravessando o perfil do casal e incidindo diretamente na barriga.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Praia/Torrey Pines Maternity Session.jpeg" data-caption="Silhueta suave e serenidade com flor no cabelo">
+                <img src="Praia/Torrey Pines Maternity Session.jpeg" alt="Referência Praia 3" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 03</span>
+                  <h4>Costas com Costas &amp; Paz</h4>
+                  <p>Composição poética de apoio mútuo ao cair da tarde.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Praia/download (4).jpeg" data-caption="Água salgada e textura de gotas na barriga">
+                <img src="Praia/download (4).jpeg" alt="Referência Praia 4" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 04</span>
+                  <h4>Gotas &amp; Maré</h4>
+                  <p>Imersão parcial na água tranquila com saída de praia rendada molhada.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Praia/Maternity Couples Photos at the Beach _ Beach Family Photos _ Sabrina Lynn Photo.jpeg" data-caption="Caminhada na beira da água de mãos dadas">
+                <img src="Praia/Maternity Couples Photos at the Beach _ Beach Family Photos _ Sabrina Lynn Photo.jpeg" alt="Referência Praia 5" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 05</span>
+                  <h4>Caminhada Descalça</h4>
+                  <p>Movimento natural, risadas espontâneas e reflexo na lâmina d'água da areia molhada.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Praia/download (5).jpeg" data-caption="Silhueta suave no reflexo espelhado da areia molhada">
+                <img src="Praia/download (5).jpeg" alt="Referência Praia 6" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 06</span>
+                  <h4>Espelho d'Água</h4>
+                  <p>Reflexo límpido na maré baixa amplificando a presença do casal sob o pôr do sol.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Praia/download (6).jpeg" data-caption="Pose sentada nas pedras litorâneas com tecido esvoaçante">
+                <img src="Praia/download (6).jpeg" alt="Referência Praia 7" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 07</span>
+                  <h4>Drapeado Costeiro</h4>
+                  <p>A imponência das rochas marítimas em contraste com a suavidade da gestação.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Praia/download (7).jpeg" data-caption="Silhueta dourada nas dunas de areia fina">
+                <img src="Praia/download (7).jpeg" alt="Referência Praia 8" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 08</span>
+                  <h4>Dunas ao Entardecer</h4>
+                  <p>Composição minimalista explorando a textura da areia e a luz âmbar rasante.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Praia/download (8).jpeg" data-caption="Abraço envolvente com foco em plano fechado nos olhares">
+                <img src="Praia/download (8).jpeg" alt="Referência Praia 9" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 09</span>
+                  <h4>Intimidade 50mm</h4>
+                  <p>Plano médio cinematográfico com separação nítida e fundo marítimo suave.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Praia/download (9).jpeg" data-caption="O beijo na fronte ao crepúsculo">
+                <img src="Praia/download (9).jpeg" alt="Referência Praia 10" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 10</span>
+                  <h4>Paz ao Crepúsculo</h4>
+                  <p>Os últimos minutos de luz celestial banhando o casal com afeto infinito.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: O REGULADOR DE ATMOSFERAS (PRAIA VS STUDIO) -->
+    <section class="content-section section-comparador" id="comparador" data-mood-section="all">
+      <div class="container">
+        <div class="section-header-editorial text-center">
+          <span class="section-eyebrow">DUALIDADE VISUAL • O REGULADOR</span>
+          <h2 class="section-headline">O Contraste dos Dois Mundos: Praia vs. Studio</h2>
+          <p class="section-subheadline">
+            Arraste o regulador central para comparar a luminosidade aberta e dourada do litoral com a profundidade escultural e o chiaroscuro do estúdio. A foto completa foi expandida para contemplação de corpo inteiro.
+          </p>
+          <div class="headline-divider center"></div>
+        </div>
+
+        <!-- Expanded Full-Height Interactive Split Comparison Regulator -->
+        <div class="split-slider-wrapper">
+          <div class="split-slider-header">
+            <span class="split-label-left">← MOOD PRAIA: LUZ DO NASCER DO SOL (05:45)</span>
+            <span class="split-label-center">ARRASTE O REGULADOR PARA COMPARAR OS DOIS MUNDOS</span>
+            <span class="split-label-right">MOOD STUDIO: CHIAROSCURO NOIR (13:00) →</span>
+          </div>
+
+          <!-- Expanded Regulator Container: Vertical Portrait Proportions (Full Photo Visible) -->
+          <div class="comparison-container" id="comparisonSlider">
+            <!-- Studio Image (Bottom Layer) -->
+            <div class="comparison-layer layer-studio">
+              <img src="assets/studio_casal_gestante_1790699214446.jpg" 
+                   onerror="this.onerror=null; this.src='Studio/download (10).jpeg';" 
+                   alt="Studio Mood: Fernanda &amp; João" 
+                   class="comparison-img">
+            </div>
+
+            <!-- Beach Image (Top Layer clipped) -->
+            <div class="comparison-layer layer-praia" id="comparisonTopLayer">
+              <img src="assets/praia_casal_gestante_1790699193950.jpg" 
+                   onerror="this.onerror=null; this.src='Praia/Beach Maternity Photos.jpeg';" 
+                   alt="Praia Mood: Fernanda &amp; João" 
+                   class="comparison-img">
+            </div>
+
+            <!-- Architectural Non-Clipped Captions -->
+            <div class="layer-caption left">
+              <span class="caption-tag">PRAIA</span>
+              <h4>Calor &amp; Respiração</h4>
+              <p>Sol contraluz, linho branco, vento marinho e rebatedor prata.</p>
+            </div>
+
+            <div class="layer-caption right">
+              <span class="caption-tag">STUDIO</span>
+              <h4>Controle &amp; Intimidade</h4>
+              <p>Octabox 90cm + Grid, fundo escuro, roupas pretas e chiaroscuro suave.</p>
+            </div>
+
+            <!-- Draggable Handle Bar -->
+            <div class="comparison-handle" id="comparisonHandle">
+              <div class="handle-line"></div>
+              <div class="handle-button" aria-label="Controlador de comparação entre Praia e Studio">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                  <polyline points="9 18 3 12 9 6"></polyline>
+                </svg>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                  <polyline points="15 18 21 12 15 6"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04: ATMOSFERA 02 - STUDIO NOIR -->
+    <section class="content-section section-studio" id="studio" data-mood-section="studio">
+      <div class="mood-watermark">STUDIO</div>
+      <div class="container">
+        <div class="section-header-editorial">
+          <span class="section-eyebrow">ATMOSFERA 02 • CONTROLE &amp; ELEGÂNCIA NOIR</span>
+          <h2 class="section-headline">Studio Noir: A Escultura das Sombras e o Silêncio</h2>
+          <p class="section-subheadline">
+            No estúdio, eliminamos qualquer ruído externo para consagrar a cumplicidade do casal e a beleza escultórica da gestação. Com iluminação precisa e fundo escuro, a pele e os toques ganham peso cinematográfico.
+          </p>
+          <div class="headline-divider"></div>
+        </div>
+
+        <!-- Editorial Split Feature -->
+        <div class="editorial-feature-grid reverse-grid">
+          <div class="feature-info-col">
+            <div class="mood-specs-box studio-specs">
+              <h3 class="specs-box-title">Pilares Estéticos do Studio</h3>
+              <div class="specs-grid">
+                <div class="spec-card">
+                  <span class="spec-card-num">01</span>
+                  <h4>Iluminação Chiaroscuro</h4>
+                  <p>Contraste acentuado e sombras profundas desenham as curvas da maternidade com elegância clássica de alta-costura.</p>
+                </div>
+                <div class="spec-card">
+                  <span class="spec-card-num">02</span>
+                  <h4>Octabox 90cm com Colmeia</h4>
+                  <p>Luz suave e direcional posicionada a 45° superior. A grade (grid) impede vazamento de luz no fundo escuro.</p>
+                </div>
+                <div class="spec-card">
+                  <span class="spec-card-num">03</span>
+                  <h4>Negative Fill (V-Flat Preto)</h4>
+                  <p>Bloqueador de reflexos no lado oposto à luz, intensificando as sombras e afinando as silhuetas laterais.</p>
+                </div>
+                <div class="spec-card">
+                  <span class="spec-card-num">04</span>
+                  <h4>Look Total Black &amp; Pele</h4>
+                  <p>Roupas escuras ou pele à mostra: o olhar se concentra sem dispersão nas mãos protetoras de João e no ventre de Fernanda.</p>
+                </div>
+              </div>
+
+              <!-- Studio Color Palette Swatches (Realevate Architectural Look) -->
+              <div class="color-palette-block">
+                <span class="palette-title">PALETA CROMÁTICA DO STUDIO</span>
+                <div class="palette-swatches">
+                  <div class="swatch-item">
+                    <div class="swatch-color" style="background: #090A0D;"></div>
+                    <span class="swatch-hex">#090A0D</span>
+                    <span class="swatch-name">Fundo Noir</span>
+                  </div>
+                  <div class="swatch-item">
+                    <div class="swatch-color" style="background: #1E2028;"></div>
+                    <span class="swatch-hex">#1E2028</span>
+                    <span class="swatch-name">Grafite Puro</span>
+                  </div>
+                  <div class="swatch-item">
+                    <div class="swatch-color" style="background: #C2C0B8;"></div>
+                    <span class="swatch-hex">#C2C0B8</span>
+                    <span class="swatch-name">Prata Platina</span>
+                  </div>
+                  <div class="swatch-item">
+                    <div class="swatch-color" style="background: #D4A373;"></div>
+                    <span class="swatch-hex">#D4A373</span>
+                    <span class="swatch-name">Champagne</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-media-col" data-tilt>
+            <div class="media-frame">
+              <img src="assets/studio_casal_gestante_1790699214446.jpg" 
+                   onerror="this.onerror=null; this.src='Studio/download (10).jpeg';" 
+                   alt="Fernanda & João no Studio minimalista" 
+                   class="feature-img" loading="lazy">
+              <div class="media-badge-editorial">DIREÇÃO EDITORIAL STUDIO</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Horizontal Scroll Reference Reel (Studio) -->
+        <div class="editorial-reel-section">
+          <div class="reel-header">
+            <div class="reel-title-block">
+              <span class="reel-eyebrow">04 // MOOD &amp; INSPIRAÇÕES STUDIO</span>
+              <h3 class="reel-title">Galeria de Poses &amp; Iluminação Noir</h3>
+            </div>
+            <div class="reel-nav-controls">
+              <span class="reel-nav-hint">ARRASTE OU NAVEGUE</span>
+              <div class="reel-btn-group">
+                <button class="reel-arrow-btn prev" data-reel="reelStudio" aria-label="Voltar referências studio">‹</button>
+                <button class="reel-arrow-btn next" data-reel="reelStudio" aria-label="Avançar referências studio">›</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="horizontal-reel-container" id="reelStudio">
+            <div class="horizontal-reel-track">
+              <div class="reel-item" data-lightbox="Studio/download (10).jpeg" data-caption="Chiaroscuro refinado com gestante sentada e luz de recorte suave">
+                <img src="Studio/download (10).jpeg" alt="Referência Studio 1" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 01</span>
+                  <h4>A Escultura da Silhueta</h4>
+                  <p>Luz lateral suave destacando as curvas da barriga contra o infinito negro.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Studio/download (11).jpeg" data-caption="Abraço por trás com camisas sociais escuras">
+                <img src="Studio/download (11).jpeg" alt="Referência Studio 2" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 02</span>
+                  <h4>Abraço Protetor</h4>
+                  <p>João envolvendo Fernanda por trás, mãos repousando no ventre com olhar cúmplice.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Studio/download (13).jpeg" data-caption="Ensaio descontraído em jeans e blusa branca em estúdio claro">
+                <img src="Studio/download (13).jpeg" alt="Referência Studio 3" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 03</span>
+                  <h4>Casual Chic Minimalista</h4>
+                  <p>A descontração do jeans e camisetas básicas para um registro atemporal e moderno.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Studio/download (14).jpeg" data-caption="Perfil estético com tecido preto fluido">
+                <img src="Studio/download (14).jpeg" alt="Referência Studio 4" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 04</span>
+                  <h4>O Manto de Sombra</h4>
+                  <p>Tecido preto texturizado moldando o corpo em linhas puras e dramáticas.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Studio/download (15).jpeg" data-caption="Close-up poético de mãos entrelaçadas sobre a barriga">
+                <img src="Studio/download (15).jpeg" alt="Referência Studio 5" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 05</span>
+                  <h4>Alianças &amp; O Toque</h4>
+                  <p>Macro detalhe das mãos de Fernanda e João com as alianças repousando sobre o bebê.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Studio/download (16).jpeg" data-caption="Luz suave de borda esculpindo a pose lateral">
+                <img src="Studio/download (16).jpeg" alt="Referência Studio 6" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 06</span>
+                  <h4>Luz de Contorno</h4>
+                  <p>Rim light delineando o perfil de Fernanda com alta definição anatômica.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Studio/download (12).jpeg" data-caption="Pose intimista do casal em fundo minimalista">
+                <img src="Studio/download (12).jpeg" alt="Referência Studio 7" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 07</span>
+                  <h4>Toque e Cumplicidade</h4>
+                  <p>Conexão pura com postura relaxada e foco total na intimidade do casal.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Studio/Беременность.jpeg" data-caption="Composição clássica editorial de gestante em fundo sóbrio">
+                <img src="Studio/Беременность.jpeg" alt="Referência Studio 8" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 08</span>
+                  <h4>A Serenidade Materna</h4>
+                  <p>Retrato de alma com olhar tranquilo voltado para a nova vida que cresce.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Studio/Every time I get to capture a growing baby belly, I’m reminded o. 🤍 %23maternityphotography %23arubaphotographer %23arubaphotography %23aruba %23arubaonehappyisland %23arubaonehappyisland %23arubatourism %23arubalife %23maternityshoot" data-caption="Estilo editorial com tecido esvoaçante e luz quente">
+                <img src="Studio/Every time I get to capture a growing baby belly, I’m reminded o. 🤍 %23maternityphotography %23arubaphotographer %23arubaphotography %23aruba %23arubaonehappyisland %23arubaonehappyisland %23arubatourism %23arubalife %23maternityshoot" onerror="this.onerror=null; this.src='Studio/download (10).jpeg';" alt="Referência Studio 9" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 09</span>
+                  <h4>Escultura do Ventre</h4>
+                  <p>Iluminação contornada ressaltando as formas da maternidade com delicadeza.</p>
+                </div>
+              </div>
+
+              <div class="reel-item" data-lightbox="Studio/Picking a cover photo for this session was almost impossible, I loved so many of them just so, so much_ I’m so grateful that I get to do this job. How are you all hanging in th. Our house got hit with the flu last____" data-caption="Composição de capa de revista com contrastes balanceados">
+                <img src="Studio/Picking a cover photo for this session was almost impossible, I loved so many of them just so, so much_ I’m so grateful that I get to do this job. How are you all hanging in th. Our house got hit with the flu last____" alt="Referência Studio 10" loading="lazy">
+                <div class="reel-meta">
+                  <span class="reel-num">REF 10</span>
+                  <h4>Capa Editorial</h4>
+                  <p>Enquadramento elegante de meio-corpo digno de publicação de moda e arte.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: DIREÇÃO FOTOGRÁFICA TÉCNICA (50MM, REBATEDOR & LUZ) -->
+    <section class="content-section section-tecnica" id="direcao-50mm" data-mood-section="all">
+      <div class="container">
+        <div class="section-header-editorial">
+          <span class="section-eyebrow">05 / PROTOCOLO ÓTICO &amp; ILUMINAÇÃO</span>
+          <h2 class="section-headline">Guia Técnico: 50mm, Rebatedor e Modificadores</h2>
+          <p class="section-subheadline">
+            Como utilizaremos a distância focal fixa de 50mm e o gerenciamento de luz na praia e no estúdio para alcançar uma estética de intimidade inigualável.
+          </p>
+          <div class="headline-divider"></div>
+        </div>
+
+        <!-- 3 Pillars Grid -->
+        <div class="technical-pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h3>A Lente 50mm Prime</h3>
+            <p>A lente de 50mm replica a percepção do olho humano, gerando sensação de presença sem as distorções angulares das grandes angulares.</p>
+            <ul class="pillar-list">
+              <li><strong>Praia (f/1.8 a f/2.2):</strong> Separação poética do casal em relação ao horizonte do mar com desfoque cremoso.</li>
+              <li><strong>Studio (f/2.5 a f/4.0):</strong> Nitidez de ponta a ponta na textura da pele, garantindo que o rosto e a barriga fiquem em foco simultâneo.</li>
+              <li><strong>Distância de Trabalho:</strong> 1.5m a 2.5m, mantendo diálogo constante e natural com Fernanda e João.</li>
+            </ul>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+              </svg>
+            </div>
+            <h3>O Rebatedor na Praia</h3>
+            <p>No contra-luz solar, o rebatedor 2-em-1 (prata/branco) é o elemento-chave para equilibrar a exposição com naturalidade.</p>
+            <ul class="pillar-list">
+              <li><strong>Posicionamento a 45°:</strong> Posicionado na frente do casal levemente inclinado para cima, devolvendo os raios do sol poente.</li>
+              <li><strong>Catchlight nos Olhos:</strong> Cria o brilho de vida nos olhos de Fernanda, eliminando sombras escuras nas pálpebras.</li>
+              <li><strong>Flash HSS de Apoio:</strong> Flash portátil com difusor redondo acionado em potência baixa (1/32 a 1/64) apenas para congelar cabelos ao vento.</li>
+            </ul>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Flash &amp; Modificadores no Studio</h3>
+            <p>O rigor do estúdio exige controle cirúrgico de dispersão de luz para esculpir o chiaroscuro perfeito.</p>
+            <ul class="pillar-list">
+              <li><strong>Octabox 90cm + Grid (Colmeia):</strong> Suaviza a transição de luz enquanto a grade estreita o feixe para não atingir o fundo.</li>
+              <li><strong>Negative Fill (V-Flat Negro):</strong> Absorve reflexos espúrios do lado oposto à luz, intensificando a linha de sombra da silhueta.</li>
+              <li><strong>Luz de Recorte Suave (Rim Light):</strong> Stripbox opcional atrás do casal para delinear a curvatura das costas e do cabelo.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Interactive Lighting Simulator (Clean header, NO glowing dot) -->
+        <div class="lighting-simulator-wrap">
+          <div class="sim-header">
+            <div class="sim-tabs">
+              <button class="sim-tab-btn active" data-tab="praia">ESQUEMA DE LUZ: PRAIA</button>
+              <button class="sim-tab-btn" data-tab="studio">ESQUEMA DE LUZ: STUDIO</button>
+            </div>
+            <div class="sim-status">
+              <span id="simStatusText">DIAGRAMA INTERATIVO • CLIQUE NOS COMPONENTES</span>
+            </div>
+          </div>
+
+          <div class="sim-body">
+            <!-- Diagram Praia (SVG Vector Interactive) -->
+            <div class="diagram-canvas active" id="diagramPraia">
+              <svg class="diagram-svg" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#fff5cc" />
+                    <stop offset="60%" stop-color="#f59e0b" />
+                    <stop offset="100%" stop-color="#d97706" />
+                  </radialGradient>
+                  <linearGradient id="sunBeamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(245, 158, 11, 0.45)" />
+                    <stop offset="100%" stop-color="rgba(245, 158, 11, 0)" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Background Sea Horizon Line -->
+                <line x1="0" y1="260" x2="800" y2="260" stroke="rgba(201, 148, 100, 0.2)" stroke-dasharray="6,6" stroke-width="1.5" />
+                <text x="30" y="250" fill="rgba(201, 148, 100, 0.4)" font-family="Plus Jakarta Sans" font-size="11" letter-spacing="2">HORIZONTE DO MAR • SOL NASCENTE (05:45)</text>
+
+                <!-- Sun (Light Source Behind) -->
+                <g class="diagram-interactive-node" id="nodeSun" transform="translate(400, 80)">
+                  <circle cx="0" cy="0" r="32" fill="url(#sunGrad)" filter="drop-shadow(0 0 25px rgba(245, 158, 11, 0.8))" />
+                  <path class="light-ray-beam" d="M -20 20 L -60 160 L 60 160 Z" fill="url(#sunBeamGrad)" opacity="0.4" />
+                  <text x="0" y="5" text-anchor="middle" fill="#121214" font-weight="700" font-size="11">SOL</text>
+                  <text x="0" y="48" text-anchor="middle" fill="#d4a373" font-size="10" letter-spacing="1">CONTRA-LUZ RASANTE</text>
+                </g>
+
+                <!-- Couple Position (Center) -->
+                <g class="diagram-node node-couple" transform="translate(400, 240)">
+                  <ellipse cx="0" cy="0" rx="36" ry="24" fill="#242226" stroke="#c99464" stroke-width="2" />
+                  <circle cx="-12" cy="0" r="10" fill="#c99464" />
+                  <circle cx="12" cy="0" r="12" fill="#d4a373" />
+                  <text x="0" y="4" text-anchor="middle" fill="#fff" font-weight="600" font-size="11">CASAL</text>
+                  <text x="0" y="42" text-anchor="middle" fill="#9e9ba5" font-size="11">Fernanda &amp; João</text>
+                </g>
+
+                <!-- Silver Reflector (Front 45°) -->
+                <g class="diagram-interactive-node" id="nodeReflector" transform="translate(490, 315)">
+                  <rect x="-35" y="-8" width="70" height="16" rx="4" fill="#e2e8f0" stroke="#38bdf8" stroke-width="2" transform="rotate(-30)" />
+                  <text x="0" y="28" text-anchor="middle" fill="#38bdf8" font-size="11" font-weight="600">REBATEDOR PRATA</text>
+                  <text x="0" y="42" text-anchor="middle" fill="#9e9ba5" font-size="9">PREENCHIMENTO 45°</text>
+                </g>
+
+                <!-- Camera 50mm (Front) -->
+                <g class="diagram-interactive-node" id="nodeCameraPraia" transform="translate(400, 390)">
+                  <polygon points="0,-18 16,10 -16,10" fill="#c99464" />
+                  <circle cx="0" cy="3" r="6" fill="#121214" />
+                  <text x="0" y="28" text-anchor="middle" fill="#c99464" font-weight="700" font-size="11">CÂMERA 50MM</text>
+                  <text x="0" y="42" text-anchor="middle" fill="#9e9ba5" font-size="10">f/1.8 • DISTÂNCIA 2.0M</text>
+                </g>
+              </svg>
+            </div>
+
+            <!-- Diagram Studio (SVG Vector Interactive) -->
+            <div class="diagram-canvas" id="diagramStudio">
+              <svg class="diagram-svg" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="octaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="rgba(255, 255, 255, 0.9)" />
+                    <stop offset="100%" stop-color="rgba(201, 148, 100, 0.15)" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Studio Dark Background -->
+                <rect x="50" y="30" width="700" height="390" rx="12" fill="#08080a" stroke="#222126" stroke-width="1.5" />
+                <text x="75" y="65" fill="#44414a" font-family="Plus Jakarta Sans" font-size="11" letter-spacing="2">STUDIO NOIR • FUNDO PRETO INFINITO</text>
+
+                <!-- Couple in Center -->
+                <g class="diagram-node node-couple" transform="translate(400, 210)">
+                  <ellipse cx="0" cy="0" rx="38" ry="24" fill="#18171c" stroke="#c99464" stroke-width="2" />
+                  <circle cx="-12" cy="0" r="10" fill="#c99464" />
+                  <circle cx="12" cy="0" r="12" fill="#d4a373" />
+                  <text x="0" y="4" text-anchor="middle" fill="#fff" font-weight="600" font-size="11">CASAL</text>
+                  <text x="0" y="42" text-anchor="middle" fill="#9e9ba5" font-size="11">Fernanda &amp; João</text>
+                </g>
+
+                <!-- Octabox 90cm Key Light (45° Left) -->
+                <g class="diagram-interactive-node" id="nodeOctabox" transform="translate(230, 130)">
+                  <polygon points="0,-24 20,-12 20,12 0,24 -20,12 -20,-12" fill="url(#octaGrad)" stroke="#f59e0b" stroke-width="2" />
+                  <path d="M 15 15 L 140 70" stroke="rgba(245, 158, 11, 0.4)" stroke-dasharray="4,4" stroke-width="1.5" />
+                  <text x="0" y="40" text-anchor="middle" fill="#f59e0b" font-weight="700" font-size="11">OCTABOX 90CM + GRID</text>
+                  <text x="0" y="54" text-anchor="middle" fill="#9e9ba5" font-size="9">LUZ PRINCIPAL 45° ALTA</text>
+                </g>
+
+                <!-- Black V-Flat Negative Fill (Right side) -->
+                <g class="diagram-interactive-node" id="nodeVFlat" transform="translate(560, 210)">
+                  <rect x="-8" y="-45" width="16" height="90" rx="3" fill="#121214" stroke="#6b7280" stroke-width="2.5" />
+                  <text x="0" y="60" text-anchor="middle" fill="#9ca3af" font-weight="600" font-size="11">V-FLAT PRETO</text>
+                  <text x="0" y="74" text-anchor="middle" fill="#6b7280" font-size="9">NEGATIVE FILL (SOMBRA PURA)</text>
+                </g>
+
+                <!-- Camera 50mm Studio (Front) -->
+                <g class="diagram-interactive-node" id="nodeCameraStudio" transform="translate(400, 370)">
+                  <polygon points="0,-18 16,10 -16,10" fill="#c99464" />
+                  <circle cx="0" cy="3" r="6" fill="#121214" />
+                  <text x="0" y="28" text-anchor="middle" fill="#c99464" font-weight="700" font-size="11">CÂMERA 50MM</text>
+                  <text x="0" y="42" text-anchor="middle" fill="#9e9ba5" font-size="10">f/2.5 • ALTURA DO PEITO</text>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06: GALERIA & MOODBOARD COMPLETO (Strictly Professional References) -->
+    <section class="content-section section-galeria" id="galeria" data-mood-section="all">
+      <div class="container">
+        <div class="section-header-editorial text-center">
+          <span class="section-eyebrow">ACERVO VISUAL • REFERÊNCIAS &amp; ARTE</span>
+          <h2 class="section-headline">Moodboard Completo do Ensaio</h2>
+          <p class="section-subheadline">
+            Explore as referências estéticas curadas para a praia e para o estúdio, além das obras originais que sintetizam a atmosfera da gestação. Clique em qualquer foto para ampliar com detalhes técnicos.
+          </p>
+          <div class="headline-divider center"></div>
+        </div>
+
+        <!-- Filter Chips (Only All, Praia, Studio - couple references removed) -->
+        <div class="gallery-filter-chips">
+          <button class="filter-chip active" data-filter="all">TODAS AS REFERÊNCIAS (22)</button>
+          <button class="filter-chip" data-filter="praia">PRAIA DOURADA (11)</button>
+          <button class="filter-chip" data-filter="studio">STUDIO NOIR (11)</button>
+        </div>
+
+        <!-- Gallery Masonry Grid -->
+        <div class="gallery-masonry" id="galleryMasonry">
+          <!-- Item 01: Original Art Praia -->
+          <div class="gallery-card item-gerada item-praia" 
+               data-src="assets/praia_casal_gestante_1790699193950.jpg" 
+               data-fallback="Praia/Beach Maternity Photos.jpeg"
+               data-title="Fernanda &amp; João: Praia Dourada" 
+               data-mood="Praia Dourada" 
+               data-lens="50mm f/1.8" 
+               data-lighting="Contra-luz Solar + Rebatedor Prata"
+               data-desc="Arte original sintetizando a espontaneidade de Fernanda e João na praia, banhados pelo dourado do entardecer com tecido translúcido e vento marinho.">
+            <div class="card-thumb-wrap">
+              <img src="assets/praia_casal_gestante_1790699193950.jpg" 
+                   onerror="this.onerror=null; this.src='Praia/Beach Maternity Photos.jpeg';" 
+                   alt="Fernanda & João Praia" loading="lazy">
+              <div class="thumb-badge-top">OBRA ORIGINAL</div>
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA DOURADA</div>
+              <h4 class="card-name">A Dança na Maré</h4>
+              <p class="card-sub">50mm f/1.8 • Rebatedor Prata</p>
+            </div>
+          </div>
+
+          <!-- Item 02: Original Art Studio -->
+          <div class="gallery-card item-gerada item-studio" 
+               data-src="assets/studio_casal_gestante_1790699214446.jpg" 
+               data-fallback="Studio/download (10).jpeg"
+               data-title="Fernanda &amp; João no Studio Noir" 
+               data-mood="Studio Minimalista" 
+               data-lens="50mm f/2.2" 
+               data-lighting="Octabox 90cm c/ Grade Colmeia + Negative Fill"
+               data-desc="Intimidade profunda e estética editorial refinada. Look preto total destacando o ventre e o afeto entre Fernanda e João.">
+            <div class="card-thumb-wrap">
+              <img src="assets/studio_casal_gestante_1790699214446.jpg" 
+                   onerror="this.onerror=null; this.src='Studio/download (10).jpeg';" 
+                   alt="Fernanda & João Studio" loading="lazy">
+              <div class="thumb-badge-top">OBRA ORIGINAL</div>
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">Silhueta &amp; Toque</h4>
+              <p class="card-sub">50mm f/2.2 • Octabox 90cm + Grid</p>
+            </div>
+          </div>
+
+          <!-- Praia References (10 items) -->
+          <div class="gallery-card item-praia" 
+               data-src="Praia/Beach Maternity Photos.jpeg" 
+               data-title="O Abraço no Crepúsculo" 
+               data-mood="Praia" data-lens="50mm f/2.0" data-lighting="Luz Natural Dourada"
+               data-desc="Abraço terno e conexão à beira da água ao pôr do sol.">
+            <div class="card-thumb-wrap">
+              <img src="Praia/Beach Maternity Photos.jpeg" alt="Praia Ref 1" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA</div>
+              <h4 class="card-name">O Abraço no Crepúsculo</h4>
+              <p class="card-sub">50mm f/2.0</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-praia" 
+               data-src="Praia/Ensaio Gestante.jpeg" 
+               data-title="O Beijo Solar no Ventre" 
+               data-mood="Praia" data-lens="50mm f/1.8" data-lighting="Sol Rasante Lateral"
+               data-desc="Iluminação solar recortando a curvatura da barriga e a ternura do beijo.">
+            <div class="card-thumb-wrap">
+              <img src="Praia/Ensaio Gestante.jpeg" alt="Praia Ref 2" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA</div>
+              <h4 class="card-name">O Beijo Solar no Ventre</h4>
+              <p class="card-sub">50mm f/1.8</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-praia" 
+               data-src="Praia/Torrey Pines Maternity Session.jpeg" 
+               data-title="Costas com Costas &amp; Paz" 
+               data-mood="Praia" data-lens="50mm f/2.2" data-lighting="Céu Dourado Difuso"
+               data-desc="Apoio mútuo e serenidade nas dunas ao fim da tarde.">
+            <div class="card-thumb-wrap">
+              <img src="Praia/Torrey Pines Maternity Session.jpeg" alt="Praia Ref 3" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA</div>
+              <h4 class="card-name">Costas com Costas</h4>
+              <p class="card-sub">50mm f/2.2</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-praia" 
+               data-src="Praia/download (4).jpeg" 
+               data-title="Gotas &amp; Maré" 
+               data-mood="Praia" data-lens="50mm f/2.0" data-lighting="Luz Rasante de Fim de Tarde"
+               data-desc="Textura de água e tecido rendado molhado em plano médio.">
+            <div class="card-thumb-wrap">
+              <img src="Praia/download (4).jpeg" alt="Praia Ref 4" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA</div>
+              <h4 class="card-name">Gotas &amp; Maré</h4>
+              <p class="card-sub">50mm f/2.0</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-praia" 
+               data-src="Praia/Maternity Couples Photos at the Beach _ Beach Family Photos _ Sabrina Lynn Photo.jpeg" 
+               data-title="Caminhada Descalça na Espuma" 
+               data-mood="Praia" data-lens="50mm f/1.8" data-lighting="Golden Hour + Rebatedor"
+               data-desc="Espontaneidade e risos cúmplices caminhando à beira d'água.">
+            <div class="card-thumb-wrap">
+              <img src="Praia/Maternity Couples Photos at the Beach _ Beach Family Photos _ Sabrina Lynn Photo.jpeg" alt="Praia Ref 5" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA</div>
+              <h4 class="card-name">Caminhada Descalça</h4>
+              <p class="card-sub">50mm f/1.8</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-praia" 
+               data-src="Praia/download (5).jpeg" 
+               data-title="Reflexo Espelhado na Areia Molhada" 
+               data-mood="Praia" data-lens="50mm f/2.0" data-lighting="Pôr do Sol Contraluz"
+               data-desc="Silhuetas refletidas na fina lâmina d'água da maré baixa.">
+            <div class="card-thumb-wrap">
+              <img src="Praia/download (5).jpeg" alt="Praia Ref 6" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA</div>
+              <h4 class="card-name">Espelho d'Água</h4>
+              <p class="card-sub">50mm f/2.0</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-praia" 
+               data-src="Praia/download (6).jpeg" 
+               data-title="Drapeado Costeiro nas Rochas" 
+               data-mood="Praia" data-lens="50mm f/2.2" data-lighting="Luz Solar Difusa"
+               data-desc="A textura das pedras costeiras com a elegância de tecidos fluidos.">
+            <div class="card-thumb-wrap">
+              <img src="Praia/download (6).jpeg" alt="Praia Ref 7" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA</div>
+              <h4 class="card-name">Drapeado Costeiro</h4>
+              <p class="card-sub">50mm f/2.2</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-praia" 
+               data-src="Praia/download (7).jpeg" 
+               data-title="Silhueta Dourada nas Dunas" 
+               data-mood="Praia" data-lens="50mm f/1.8" data-lighting="Sol Rasante Poente + Rebatedor"
+               data-desc="Pose sentada na areia com reflexo dourado na pele e vento marítimo.">
+            <div class="card-thumb-wrap">
+              <img src="Praia/download (7).jpeg" alt="Praia Ref 8" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA</div>
+              <h4 class="card-name">Dunas Douradas</h4>
+              <p class="card-sub">50mm f/1.8</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-praia" 
+               data-src="Praia/download (8).jpeg" 
+               data-title="Intimidade e Olhar Cúmplice" 
+               data-mood="Praia" data-lens="50mm f/1.8" data-lighting="Contra-luz com Rebatedor"
+               data-desc="Enquadramento de meio-corpo focado na expressão afetuosa do casal.">
+            <div class="card-thumb-wrap">
+              <img src="Praia/download (8).jpeg" alt="Praia Ref 9" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA</div>
+              <h4 class="card-name">Olhar Cúmplice</h4>
+              <p class="card-sub">50mm f/1.8</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-praia" 
+               data-src="Praia/download (9).jpeg" 
+               data-title="O Beijo na Fronte ao Crepúsculo" 
+               data-mood="Praia" data-lens="50mm f/1.8" data-lighting="Golden Hour Suave"
+               data-desc="Conexão emotiva e carinho espontâneo no ápice da luz dourada.">
+            <div class="card-thumb-wrap">
+              <img src="Praia/download (9).jpeg" alt="Praia Ref 10" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">PRAIA</div>
+              <h4 class="card-name">Paz ao Crepúsculo</h4>
+              <p class="card-sub">50mm f/1.8</p>
+            </div>
+          </div>
+
+          <!-- Studio References (10 items) -->
+          <div class="gallery-card item-studio" 
+               data-src="Studio/download (10).jpeg" 
+               data-title="A Escultura da Silhueta Noir" 
+               data-mood="Studio" data-lens="50mm f/2.5" data-lighting="Octabox Lateral 45° + Grid"
+               data-desc="Luz precisa delineando o contorno do ventre com fundo preto absoluto.">
+            <div class="card-thumb-wrap">
+              <img src="Studio/download (10).jpeg" alt="Studio Ref 1" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">A Escultura da Silhueta</h4>
+              <p class="card-sub">50mm f/2.5</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-studio" 
+               data-src="Studio/download (11).jpeg" 
+               data-title="Abraço Protetor Monocromático" 
+               data-mood="Studio" data-lens="50mm f/2.8" data-lighting="Luz Direcional com Colmeia"
+               data-desc="João envolvendo Fernanda por trás em look escuro atemporal.">
+            <div class="card-thumb-wrap">
+              <img src="Studio/download (11).jpeg" alt="Studio Ref 2" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">Abraço Protetor</h4>
+              <p class="card-sub">50mm f/2.8</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-studio" 
+               data-src="Studio/download (12).jpeg" 
+               data-title="Toque de Cumplicidade no Studio" 
+               data-mood="Studio" data-lens="50mm f/2.2" data-lighting="Softbox Difuso + Fundo Escuro"
+               data-desc="Pose intimista com conexão visual profunda e iluminação sutil.">
+            <div class="card-thumb-wrap">
+              <img src="Studio/download (12).jpeg" alt="Studio Ref 3" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">Toque de Cumplicidade</h4>
+              <p class="card-sub">50mm f/2.2</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-studio" 
+               data-src="Studio/download (13).jpeg" 
+               data-title="Casual Chic: Jeans e Camiseta Branca" 
+               data-mood="Studio" data-lens="50mm f/2.0" data-lighting="Softbox Difuso Preto e Branco"
+               data-desc="Ensaio descontraído em PB destacando a intimidade contemporânea do casal.">
+            <div class="card-thumb-wrap">
+              <img src="Studio/download (13).jpeg" alt="Studio Ref 4" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">Casual Chic Minimalista</h4>
+              <p class="card-sub">50mm f/2.0</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-studio" 
+               data-src="Studio/download (14).jpeg" 
+               data-title="O Manto de Sombra" 
+               data-mood="Studio" data-lens="50mm f/2.8" data-lighting="Chiaroscuro com Stripbox"
+               data-desc="Drapeado preto sobre o corpo criando linhas escultóricas de alta elegância.">
+            <div class="card-thumb-wrap">
+              <img src="Studio/download (14).jpeg" alt="Studio Ref 5" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">O Manto de Sombra</h4>
+              <p class="card-sub">50mm f/2.8</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-studio" 
+               data-src="Studio/download (15).jpeg" 
+               data-title="Alianças &amp; O Toque Sagrado" 
+               data-mood="Studio" data-lens="50mm Macro f/2.8" data-lighting="Luz Pontual Suave"
+               data-desc="Close nos dedos e alianças de Fernanda e João repousando sobre o bebê.">
+            <div class="card-thumb-wrap">
+              <img src="Studio/download (15).jpeg" alt="Studio Ref 6" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">Alianças &amp; O Toque</h4>
+              <p class="card-sub">50mm f/2.8</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-studio" 
+               data-src="Studio/download (16).jpeg" 
+               data-title="Luz de Contorno Lateral" 
+               data-mood="Studio" data-lens="50mm f/2.5" data-lighting="Rim Light Traseiro + V-Flat"
+               data-desc="Perfil desenhado por uma linha de luz contínua com pele radiante.">
+            <div class="card-thumb-wrap">
+              <img src="Studio/download (16).jpeg" alt="Studio Ref 7" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">Luz de Contorno</h4>
+              <p class="card-sub">50mm f/2.5</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-studio" 
+               data-src="Studio/Беременность.jpeg" 
+               data-title="A Serenidade Materna" 
+               data-mood="Studio" data-lens="50mm f/2.2" data-lighting="Luz de Janela Simulada em Estúdio"
+               data-desc="Retrato clássico de Fernanda com olhar doce e acolhimento materno.">
+            <div class="card-thumb-wrap">
+              <img src="Studio/Беременность.jpeg" alt="Studio Ref 8" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">A Serenidade Materna</h4>
+              <p class="card-sub">50mm f/2.2</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-studio" 
+               data-src="Studio/Every time I get to capture a growing baby belly, I’m reminded o. 🤍 %23maternityphotography %23arubaphotographer %23arubaphotography %23aruba %23arubaonehappyisland %23arubaonehappyisland %23arubatourism %23arubalife %23maternityshoot" 
+               data-title="Escultura e Contorno do Ventre" 
+               data-mood="Studio" data-lens="50mm f/2.5" data-lighting="Octabox c/ Grid Direcional"
+               data-desc="Enquadramento vertical realçando a forma da gestação com pureza de linhas.">
+            <div class="card-thumb-wrap">
+              <img src="Studio/Every time I get to capture a growing baby belly, I’m reminded o. 🤍 %23maternityphotography %23arubaphotographer %23arubaphotography %23aruba %23arubaonehappyisland %23arubaonehappyisland %23arubatourism %23arubalife %23maternityshoot" onerror="this.onerror=null; this.src='Studio/download (10).jpeg';" alt="Studio Ref 9" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">Escultura do Ventre</h4>
+              <p class="card-sub">50mm f/2.5</p>
+            </div>
+          </div>
+
+          <div class="gallery-card item-studio" 
+               data-src="Studio/Picking a cover photo for this session was almost impossible, I loved so many of them just so, so much_ I’m so grateful that I get to do this job. How are you all hanging in th. Our house got hit with the flu last____" 
+               data-title="Capa Editorial Atemporal" 
+               data-mood="Studio" data-lens="50mm f/2.8" data-lighting="Iluminação de Revista de Luxo"
+               data-desc="Composição de capa sofisticada com contrastes ricos e tom intimista.">
+            <div class="card-thumb-wrap">
+              <img src="Studio/Picking a cover photo for this session was almost impossible, I loved so many of them just so, so much_ I’m so grateful that I get to do this job. How are you all hanging in th. Our house got hit with the flu last____" alt="Studio Ref 10" loading="lazy">
+              <div class="card-hover-overlay"><span class="overlay-text">VER DETALHE</span></div>
+            </div>
+            <div class="card-info">
+              <div class="card-cat">STUDIO NOIR</div>
+              <h4 class="card-name">Capa Editorial</h4>
+              <p class="card-sub">50mm f/2.8</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07: CRONOGRAMA & CHECKLIST OPERACIONAL -->
+    <section class="content-section section-cronograma" id="cronograma" data-mood-section="all">
+      <div class="container">
+        <div class="section-header-editorial">
+          <span class="section-eyebrow">07 / PRODUÇÃO &amp; PLANEJAMENTO OPERACIONAL</span>
+          <h2 class="section-headline">Cronograma do Dia do Ensaio &amp; Checklist</h2>
+          <p class="section-subheadline">
+            Planejamento detalhado de horários, deslocamentos e conferência de equipamentos para garantir tranquilidade, conforto à gestante e fotos inesquecíveis.
+          </p>
+          <div class="headline-divider"></div>
+        </div>
+
+        <div class="cronograma-grid">
+          <!-- Timeline Column -->
+          <div class="timeline-column">
+            <h3 class="column-title">Roteiro de Horários</h3>
+            <div class="timeline-flow">
+              <div class="timeline-step">
+                <span class="step-time">04:00</span>
+                <div class="step-body">
+                  <h4>Saída de Pindamonhangaba — SP</h4>
+                  <p>Partida pontual na madrugada com destino ao litoral. Viagem calma e confortável para Fernanda com café térmico e paradas de apoio.</p>
+                </div>
+              </div>
+
+              <div class="timeline-step highlight-praia">
+                <span class="step-time">05:45 — 08:30</span>
+                <div class="step-body">
+                  <h4>Etapa 01: Praia (O Sol Nascente &amp; Aurora)</h4>
+                  <p>Fotos pegando o sol nascendo sobre o mar. Luz suave, temperatura fresca, praia deserta e fotos com lente 50mm e rebatedor prata até as 08h30.</p>
+                </div>
+              </div>
+
+              <div class="timeline-step">
+                <span class="step-time">08:30 — 12:00</span>
+                <div class="step-body">
+                  <h4>Retorno / Subida da Serra para Pinda</h4>
+                  <p>Subida tranquila de volta para Pindamonhangaba. Pausa para hidratação, lanche leve e descanso no veículo durante o trajeto.</p>
+                </div>
+              </div>
+
+              <div class="timeline-step">
+                <span class="step-time">12:00 — 13:00</span>
+                <div class="step-body">
+                  <h4>Pausa para o Almoço &amp; Relaxamento</h4>
+                  <p>Almoço reconfortante em Pindamonhangaba, descanso para a gestante e preparação/retoque de beleza para o ensaio de estúdio.</p>
+                </div>
+              </div>
+
+              <div class="timeline-step highlight-studio">
+                <span class="step-time">13:00 — 16:00</span>
+                <div class="step-body">
+                  <h4>Etapa 02: Studio Noir (Intimidade &amp; Chiaroscuro)</h4>
+                  <p>Sessão intimista em estúdio climatizado em Pindamonhangaba. Iluminação com Octabox 90cm + Grid e V-Flat para esculpir a gestação com elegância atemporal.</p>
+                </div>
+              </div>
+
+              <div class="timeline-step">
+                <span class="step-time">16:00</span>
+                <div class="step-body">
+                  <h4>Finalização da Produção &amp; Backup</h4>
+                  <p>Encerramento pontual da diária sem cansaço excessivo para Fernanda. Conferência das prévias e backup duplo redundante imediato.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Checklist Column -->
+          <div class="checklist-column">
+            <div class="checklist-card">
+              <div class="checklist-card-header">
+                <div>
+                  <h3 class="column-title">Checklist do Fotógrafo &amp; Produção</h3>
+                  <p class="checklist-meta">Marque os itens conforme concluir. Salva automaticamente no navegador.</p>
+                </div>
+                <div class="checklist-badge" id="checklistProgressBadge">0/10 CONCLUÍDO</div>
+              </div>
+
+              <!-- Animated Progress Bar -->
+              <div class="checklist-progress-bar">
+                <div class="progress-bar-fill" id="checklistProgressFill"></div>
+              </div>
+
+              <div class="checklist-items-wrap" id="checklistWrap">
+                <label class="check-item">
+                  <input type="checkbox" id="chk-1">
+                  <span class="custom-checkbox"></span>
+                  <span class="check-label">Saída de Pindamonhangaba confirmada às 04h00 com rota e veículo preparados</span>
+                </label>
+
+                <label class="check-item">
+                  <input type="checkbox" id="chk-2">
+                  <span class="custom-checkbox"></span>
+                  <span class="check-label">Rebatedor 2-em-1 (Prata / Branco) conferido para preenchimento na praia</span>
+                </label>
+
+                <label class="check-item">
+                  <input type="checkbox" id="chk-3">
+                  <span class="custom-checkbox"></span>
+                  <span class="check-label">Flash portátil com suporte HSS e bateria 100% carregada para congelamento</span>
+                </label>
+
+                <label class="check-item">
+                  <input type="checkbox" id="chk-4">
+                  <span class="custom-checkbox"></span>
+                  <span class="check-label">Octabox 90cm montado previamente com grade colmeia (grid) no estúdio</span>
+                </label>
+
+                <label class="check-item">
+                  <input type="checkbox" id="chk-5">
+                  <span class="custom-checkbox"></span>
+                  <span class="check-label">Painel V-Flat preto posicionado para Negative Fill no estúdio</span>
+                </label>
+
+                <label class="check-item">
+                  <input type="checkbox" id="chk-6">
+                  <span class="custom-checkbox"></span>
+                  <span class="check-label">Cartões de memória de alta velocidade (V60/V90) formatados em slot duplo</span>
+                </label>
+
+                <label class="check-item">
+                  <input type="checkbox" id="chk-7">
+                  <span class="custom-checkbox"></span>
+                  <span class="check-label">Toalhas secas, água mineral gelada e kit de apoio para a gestante na praia</span>
+                </label>
+
+                <label class="check-item">
+                  <input type="checkbox" id="chk-8">
+                  <span class="custom-checkbox"></span>
+                  <span class="check-label">Looks da Praia: Linho cru, camisa aberta branca e saídas de praia leves</span>
+                </label>
+
+                <label class="check-item">
+                  <input type="checkbox" id="chk-9">
+                  <span class="custom-checkbox"></span>
+                  <span class="check-label">Looks do Studio: Roupas pretas lisas, jeans confortável e lingerie minimalista</span>
+                </label>
+
+                <label class="check-item">
+                  <input type="checkbox" id="chk-10">
+                  <span class="custom-checkbox"></span>
+                  <span class="check-label">Estúdio em Pinda reservado e climatizado das 13h00 às 16h00 com playlist aconchegante</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Editorial Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Fechar galeria">✕</button>
+      
+      <div class="lightbox-body">
+        <div class="lightbox-figure">
+          <button class="lightbox-nav-btn prev" id="lbPrevBtn" aria-label="Foto anterior">‹</button>
+          <img src="" alt="" id="lightboxImg" class="lightbox-image">
+          <button class="lightbox-nav-btn next" id="lbNextBtn" aria-label="Próxima foto">›</button>
+        </div>
+        <div class="lightbox-sidebar">
+          <span class="lightbox-mood" id="lightboxMood">ATMOSFERA</span>
+          <h3 class="lightbox-title" id="lightboxTitle">Título da Fotografia</h3>
+          <p class="lightbox-desc" id="lightboxDesc">Descrição do momento e conceito estético.</p>
+
+          <div class="lightbox-exif">
+            <div class="exif-row">
+              <span class="exif-label">ÓTICA:</span>
+              <span class="exif-val" id="lightboxLens">50mm Prime</span>
+            </div>
+            <div class="exif-row">
+              <span class="exif-label">ILUMINAÇÃO:</span>
+              <span class="exif-val" id="lightboxLighting">Luz Natural + Modificadores</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Editorial Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="footer-monogram">F &amp; J</div>
+        <div class="footer-tagline">MATERNITÉ • DIREÇÃO EDITORIAL &amp; MOODBOARD</div>
+        <p class="footer-sub">Ensaio gestante com direção para praia e estúdio com lente 50mm prime.</p>
+      </div>
+
+      <div class="footer-links-row">
+        <a href="#conceito" class="footer-nav-link">01 Conceito</a>
+        <a href="#praia" class="footer-nav-link">02 Praia</a>
+        <a href="#comparador" class="footer-nav-link">03 O Regulador</a>
+        <a href="#studio" class="footer-nav-link">04 Studio</a>
+        <a href="#direcao-50mm" class="footer-nav-link">05 Guia 50mm</a>
+        <a href="#galeria" class="footer-nav-link">06 Galeria</a>
+        <a href="#cronograma" class="footer-nav-link">07 Checklist</a>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/oroledocasal/" target="_blank" rel="noopener noreferrer" class="social-pill">
+          <svg class="pill-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"></circle>
+          </svg>
+          <span>Instagram: @oroledocasal</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
