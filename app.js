@@ -524,7 +524,7 @@ function openSingleLightbox(src, caption) {
   const safeSrc = (src || '').replace(/#/g, '%23');
   img.onerror = function () {
     this.onerror = null;
-    this.src = 'Studio/download (10).jpeg';
+    this.src = 'Studio/studio_ref_03.jpeg';
   };
   img.src = safeSrc;
   if (title) title.textContent = caption || 'Referência de Ensaio';
@@ -669,7 +669,7 @@ function initGalleryAndLightbox() {
           this.src = fallback;
           this.onerror = null;
         } else {
-          this.src = 'Studio/download (10).jpeg';
+          this.src = 'Studio/studio_ref_03.jpeg';
           this.onerror = null;
         }
       };
