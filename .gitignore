@@ -4,3 +4,7 @@ ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 .DS_Store
+
+# Local high-res raw photo exports (prevent repository bloat)
+Exportação - Fernanda e João + 1/
+Exportacao - Fernanda e Joao + 1/

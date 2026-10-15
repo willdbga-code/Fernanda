@@ -1411,6 +1411,43 @@ body:hover .custom-cursor {
   gap: 14px;
 }
 
+.reel-collage-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: var(--text-light, #F5F2EB);
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.reel-collage-btn svg {
+  color: var(--gold-accent, #D4AF37);
+  transition: transform 0.25s ease;
+}
+
+.reel-collage-btn:hover {
+  background: var(--gold-accent, #D4AF37);
+  color: #0A0B0E;
+  border-color: var(--gold-accent, #D4AF37);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.25);
+}
+
+.reel-collage-btn:hover svg {
+  color: #0A0B0E;
+  transform: scale(1.1);
+}
+
 .reel-nav-hint {
   display: inline-flex;
   align-items: center;
